@@ -46,7 +46,7 @@ table {
 }
 
 .menu-1,
-.menu3 {
+.menu-3 {
     display: flex;
     justify-content: space-between;
     background-color: #2a3644;
@@ -77,7 +77,7 @@ table {
 
 
 .menu-2>li>a,
-.menu-3-important>li>a {
+.menu-3-between>li>a {
     display: block;
     padding: 14px 43.2px;
     color: #fff;
@@ -91,7 +91,7 @@ table {
 }
 
 .menu-2>li+li,
-.menu-3-important>li+li {
+.menu-3-between>li+li {
     border-left: 1px solid #3f4852;
 }
 
@@ -166,23 +166,23 @@ table {
 }
 
 .sub-menu-2_1 li,
-.menu-3-important>li,
+.menu-3-between>li,
 .sub-menu-2 li,
 .menu-1>li,
 .menu-2>li,
-.menu-3-important>li{
+.menu-3-between>li{
     position: relative;
 }
 
 
 
 .sub-menu-2_1 li:hover .sub-menu-2_2,
-.menu-3-important li:hover .sub-menu-5,
+.menu-3-between li:hover .sub-menu-5,
 .sub-menu-2>li:hover .sub-menu-2_1,
-.menu-3-important>li:hover .sub-menu-3,
+.menu-3-between>li:hover .sub-menu-3,
 .menu-1>li:hover .sub-menu-1,
 .menu-2>li:hover .sub-menu-2,
-.menu-3-important>li:hover .sub-menu-4{
+.menu-3-between>li:hover .sub-menu-4{
     display: block;
 }
 
@@ -232,8 +232,8 @@ table {
 
 .menu-1>li:hover>a,
 .menu-2>li:hover>a,
-.menu-3-important>li:hover>a{
-    color: #fff;
+.menu-3-between>li:hover>a{
+    color: #ff8505;
     background-color: #3f4852;
 }
 
@@ -249,7 +249,7 @@ table {
     right: 0;
 }
 
-.menu-3-important {
+.menu-3-between {
     display: flex;
     justify-content: space-between;
 }
@@ -291,7 +291,7 @@ table {
 
 .menu-1>li:hover .menu-rl,
 .menu-2>li:hover .menu-rl,
-.menu-3-important>li:hover .menu-rl{
+.menu-3-between>li:hover .menu-rl{
     border-radius: 3px 0 0 3px;
 }
 .menu-1>li:hover .menu-rr,
@@ -316,17 +316,17 @@ a.icon-home {
     background-position: -34px 0;
 }
 
-.social {
+.social-menu {
     display: flex;
     align-items: center;
     padding: 12px 43.2px;
 }
 
-.social li {
+.social-menu li {
     border: none;
 }
 
-.social a {
+.social-menu a {
     display: inline-block;
     margin-left: 25px;
     padding: 0;
@@ -340,8 +340,8 @@ a.fb {
 }
 
 a.tw {
-    width: 17px;
-    height: 15px;
+    width: 16px;
+    height: 14px;
     background-position: 0 0;
 }
 
@@ -352,7 +352,9 @@ a.in {
 }
 
 .social-menu a:hover {
-    transform: scale(1.3);
+    border-radius: 4px;
+    background-color: #ff8505;
+    transition: background-color 0.5s;
 }
 
 .table-1,
